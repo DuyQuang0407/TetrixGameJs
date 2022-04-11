@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+
+</head>
+
+<body>
+    <div class="grid">
+        <div class="left-column">
+            <div>
+                <h2>high score</h2>
+                <ol id='highscore'></ol>
+            </div>
+        </div>
+        <canvas id="board" class="game-board">
+        </canvas>
+        <div class="right-column">
+            <div>
+                <h1>Tetris</h1>
+                <p>Score: <span id="score">0</span></p>
+                <p>Lines: <span id="lines">0</span></p>
+                <p>Level: <span id="level">0</span></p>
+                <p>Next: <span id="next"></span></p>
+            </div>
+            <button onclick="play()" class="play-button">Play</button>
+        </div>
+    </div>
+    <script tyle="text/javascript" src="./assets/js/constants.js"></script>
+    <script tyle="text/javascript" src="./assets/js/board.js"></script>
+    <script tyle="text/javascript" src="./assets/js/piece.js"></script>
+    <script tyle="text/javascript" src="./assets/js/main.js"></script>
+</body>
